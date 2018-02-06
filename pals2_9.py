@@ -4,3 +4,5 @@ def padding(b ,blocksize):
     b = b.encode()
   hey = blocksize - (len(b) % blocksize)
   return b + bytes([hey]) * hey
+
+print(padding('YELLOW SUBMARINE', 20))
